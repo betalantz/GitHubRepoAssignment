@@ -1,0 +1,52 @@
+Betalantzs-MacBook-Pro:Desktop betalantz$ mkdir GitHubRepoAssignment
+Betalantzs-MacBook-Pro:Desktop betalantz$ ls
+GitHubRepoAssignment	gittest
+Betalantzs-MacBook-Pro:Desktop betalantz$ touch readme.md
+Betalantzs-MacBook-Pro:Desktop betalantz$ open readme.md 
+Betalantzs-MacBook-Pro:Desktop betalantz$ ls
+GitHubRepoAssignment	gittest			readme.md
+Betalantzs-MacBook-Pro:Desktop betalantz$ mv readme.md GitHubRepoAssignment/
+Betalantzs-MacBook-Pro:Desktop betalantz$ ls
+GitHubRepoAssignment	gittest
+Betalantzs-MacBook-Pro:Desktop betalantz$ cd GitHubRepoAssignment/
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ ls
+readme.md
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git init
+Initialized empty Git repository in /Users/betalantz/Desktop/GitHubRepoAssignment/.git/
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ add .
+-bash: add: command not found
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git add .
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   readme.md
+
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git commit -m 'this is first commit'
+[master (root-commit) 901d49d] this is first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git remote add origin https://github.com/betalantz/GitHubRepoAssignment.git
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ git push -u origin master
+Username for 'https://github.com': betalantz
+Password for 'https://betalantz@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/betalantz/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ touch GitHubRepAssignment.txt
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ open GitHubRepAssignment.txt 
+Betalantzs-MacBook-Pro:GitHubRepoAssignment betalantz$ 
